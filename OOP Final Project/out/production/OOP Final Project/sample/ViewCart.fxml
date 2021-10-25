@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewCartController">
+   <children>
+      <Pane prefHeight="64.0" prefWidth="600.0" style="-fx-background-color: #D1457D;">
+         <children>
+            <Label layoutX="14.0" layoutY="19.0" prefHeight="27.0" prefWidth="137.0" style="-fx-font-weight: Bold; -fx-font-style: ITALIC;" text="Customer Cart" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="39.0" layoutY="349.0" mnemonicParsing="false" onAction="#backtoLoginPage" prefHeight="27.0" prefWidth="108.0" style="-fx-background-color: transparent; -fx-background-color: #D1457D;" text="Back" textFill="WHITE" />
+      <ScrollPane layoutX="87.0" layoutY="100.0" prefHeight="200.0" prefWidth="414.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="CustomerCartViewList1" prefHeight="200.0" prefWidth="202.0" />
+                  <ListView fx:id="CustomerCartViewList2" layoutX="202.0" prefHeight="200.0" prefWidth="194.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="87.0" layoutY="83.0" text="Food" />
+      <Label layoutX="286.0" layoutY="83.0" text="Price" />
+      <Label layoutX="286.0" layoutY="307.0" text="Total" />
+      <Label fx:id="TotalPriceShowLabel" layoutX="334.0" layoutY="307.0" />
+      <Button layoutX="465.0" layoutY="348.0" mnemonicParsing="false" onAction="#PlaceOrderButton" prefHeight="27.0" prefWidth="108.0" style="-fx-background-color: #D1457D;" text="Place Order" textFill="WHITE" />
+      <Button layoutX="324.0" layoutY="349.0" mnemonicParsing="false" onAction="#emptyCart" prefHeight="27.0" prefWidth="108.0" style="-fx-background-color: #D1457D;" text="Empty Cart" textFill="WHITE" />
+      <Label fx:id="placeOrderLabel" layoutX="39.0" layoutY="316.0" />
+      <Button layoutX="191.0" layoutY="349.0" mnemonicParsing="false" onAction="#CancelOrder" prefHeight="27.0" prefWidth="95.0" style="-fx-background-color: transparent; -fx-background-color: #D1457D;" text="Cancel Order" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerLoginController">
+    <children>
+        <Pane prefHeight="78.0" prefWidth="611.0" style="-fx-background-color: #D1457D;">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" prefHeight="44.0" prefWidth="263.0" style="-fx-font-weight: Bold; -fx-font-style: ITALIC;" text="Welcome " textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button layoutX="524.0" layoutY="28.0" mnemonicParsing="false" onAction="#backtoLoginPage" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE" />
+            <Label fx:id="CustomerNameLable" layoutX="100.0" layoutY="23.0" prefHeight="17.0" prefWidth="125.0" style="-fx-font-weight: bold;" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            </children>
+        </Pane>
+      <Button layoutX="411.0" layoutY="355.0" mnemonicParsing="false" onAction="#ViewCartButton" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: #D1457D;" text="VIew Cart" textFill="WHITE" />
+      <FontAwesomeIconView fill="WHITE" layoutX="546.0" layoutY="371.0" />
+      <ScrollPane layoutX="83.0" layoutY="113.0" prefHeight="260.0" prefWidth="299.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="259.0" prefWidth="298.0">
+               <children>
+                  <ListView fx:id="ListViewRestaurants" prefHeight="245.0" prefWidth="283.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button layoutX="404.0" layoutY="113.0" mnemonicParsing="false" onAction="#DelieveryStatusButton" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: #D1457D;" text="Check Delivery Status" textFill="WHITE" />
+      <Label fx:id="CheckDeliveryStatusLabel" layoutX="405.0" layoutY="152.0" prefHeight="17.0" prefWidth="193.0" />
+      <Button layoutX="409.0" layoutY="259.0" mnemonicParsing="false" onAction="#CheckOutButton" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: #D1457D;" text="CheckOut" textFill="WHITE" />
+      <Label fx:id="NoRestaurantLabel" layoutX="83.0" layoutY="88.0" />
+    </children>
+</AnchorPane>

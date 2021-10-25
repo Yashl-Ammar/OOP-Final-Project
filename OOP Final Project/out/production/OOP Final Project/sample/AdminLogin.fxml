@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminLoginController">
+   <children>
+      <Pane prefHeight="67.0" prefWidth="600.0" style="-fx-background-color: #D1457D;">
+         <children>
+            <Label layoutX="21.0" layoutY="25.0" style="-fx-font-weight: BOLD;" text="Welcome To Admin Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="512.0" layoutY="26.0" mnemonicParsing="false" onAction="#LogoutButton" style="-fx-background-color: #D1457D;" text="Logout" textFill="WHITE" />
+            <Label fx:id="AdminUsernameLabel" layoutX="252.0" layoutY="25.0" prefHeight="27.0" prefWidth="262.0" style="-fx-font-weight: Bold;" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Button layoutX="19.0" layoutY="139.0" mnemonicParsing="false" onAction="#ModifyIDandPasswordButton" prefHeight="27.0" prefWidth="562.0" style="-fx-background-color: #D1457D;" text="Modify Your ID And Password" textFill="WHITE" />
+      <Button layoutX="20.0" layoutY="192.0" mnemonicParsing="false" onAction="#ViewRestaurantRequestButton" prefHeight="27.0" prefWidth="562.0" style="-fx-background-color: #D1457D;" text="View Restaurant Request" textFill="WHITE" />
+      <Button layoutX="20.0" layoutY="244.0" mnemonicParsing="false" onAction="#ViewRiderRequestButton" prefHeight="27.0" prefWidth="562.0" style="-fx-background-color: #D1457D;" text="View Rider Requests" textFill="WHITE" />
+      <Button layoutX="19.0" layoutY="291.0" mnemonicParsing="false" onAction="#RemoveCustomer" prefHeight="27.0" prefWidth="562.0" style="-fx-background-color: #D1457D;" text="Remove Customer" textFill="WHITE" />
+   </children>
+</AnchorPane>
